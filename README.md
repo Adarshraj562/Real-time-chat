@@ -1,73 +1,59 @@
 # Snappy - Chat Application 
 Snappy is chat application build with the power of MERN Stack. (https://www.youtube.com/watch?v=otaQKODEUFs)
 
+# Real-Time Chat Application
 
-# Features
+## Introduction
 
-    Real-Time Messaging: Users can send and receive messages instantly with no delay using Socket.io.
-    User Authentication: Secure authentication via JWT, allowing users to sign up, log in, and access chat rooms.
-    Chat Rooms: Users can join existing chat rooms or create new ones to chat privately or with groups.
-    Typing Indicators: Real-time notifications when another user is typing.
-    Message Persistence: Chat messages are stored in MongoDB for easy retrieval of chat history.
-    Responsive Design: The application is fully responsive, providing an optimal experience across different devices.
-    
-# Technologies Used
+This project is a full-stack real-time chat application that allows users to communicate in real-time through private or group chat rooms. The application is built using modern web technologies such as **React.js**, **Node.js**, **MongoDB**, and **Socket.io**, providing a seamless, responsive, and scalable user experience. Users can send messages instantly, view message history, and see real-time updates when others are typing or when new messages arrive.
 
-    Frontend: React.js, HTML, CSS , Axios for API calls, Socket.io client for real-time communication.
-    Backend: Node.js, Express.js for API endpoints and handling requests, Socket.io for WebSocket connections, JWT for authentication.
-    Database: MongoDB with Mongoose ORM for storing user data, messages, and chat rooms.
-    Real-Time Communication: Socket.io for handling real-time, bidirectional communication between clients and the server.
+## Features
 
-# Architecture
+- **Real-Time Messaging**: Users can send and receive messages instantly with no delay using Socket.io.  
+- **User Authentication**: Secure authentication via JWT, allowing users to sign up, log in, and access chat rooms.  
+- **Chat Rooms**: Users can join existing chat rooms or create new ones to chat privately or with groups.  
+- **Typing Indicators**: Real-time notifications when another user is typing.  
+- **Message Persistence**: Chat messages are stored in MongoDB for easy retrieval of chat history.  
+- **Responsive Design**: The application is fully responsive, providing an optimal experience across different devices.
 
-    Client-Side (React.js):
-        React.js components handle the user interface, routing, and manage the state of the application.
-        Axios is used to send HTTP requests to the backend for user authentication and message retrieval.
-        Socket.io is used on the client-side for real-time messaging.
+## Technologies Used
 
-    Server-Side (Node.js + Express.js):
-        Express.js handles API requests, user authentication, and message routing.
-        The Socket.io server listens for real-time events such as sending and receiving messages.
+- **Frontend**: React.js, HTML, CSS, Axios for API calls, Socket.io client for real-time communication.  
+- **Backend**: Node.js, Express.js for API endpoints and handling requests, Socket.io for WebSocket connections, JWT for authentication.  
+- **Database**: MongoDB with Mongoose ORM for storing user data, messages, and chat rooms.  
+- **Real-Time Communication**: Socket.io for handling real-time, bidirectional communication between clients and the server.
 
-    Database (MongoDB):
-        MongoDB stores chat messages, user details, and chat room information.
-        Mongoose is used for defining schemas and interacting with the database.
+## Architecture
 
+### Client-Side (React.js)
 
-## Installation Guide
+- React.js components handle the user interface, routing, and manage the state of the application.
+- Axios is used to send HTTP requests to the backend for user authentication and message retrieval.
+- Socket.io is used on the client-side for real-time messaging.
 
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
+### Server-Side (Node.js + Express.js)
 
-Both should be installed and make sure mongodb is running.
-### Installation
-#### 1.Clone the repository:
-```shell
-git clone https://github.com/Adarshraj562/chat-app-react-nodejs
-cd chat-app-react-nodejs
-```
-#### 2. Install dependicies:
-Now install the dependencies
-```shell
-cd server
-npm i
-cd ..
-cd public
-npm i
-```
+- Express.js handles API requests, user authentication, and message routing.
+- The Socket.io server listens for real-time events such as sending and receiving messages.
 
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
+### Database (MongoDB)
 
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
+- MongoDB stores chat messages, user details, and chat room information.
+- Mongoose is used for defining schemas and interacting with the database.
 
+## Installation
 
-```
+### Prerequisites
+
+- Node.js  
+- MongoDB (running locally or via a cloud service like MongoDB Atlas)
+
+### Steps
+
+Clone the repository:
+
+```bash
+git clone https://github.com/itsaman080/Real-Time-Chat-Application.git
+cd Real-Time-Chat-Application
+
 Done! Now open localhost:3000 in your browser.
