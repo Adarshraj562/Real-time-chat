@@ -2,7 +2,7 @@
 Snappy is chat application build with the power of MERN Stack. (https://www.youtube.com/watch?v=otaQKODEUFs)
 
 
-## Features
+# Features
 
     Real-Time Messaging: Users can send and receive messages instantly with no delay using Socket.io.
     User Authentication: Secure authentication via JWT, allowing users to sign up, log in, and access chat rooms.
@@ -11,14 +11,14 @@ Snappy is chat application build with the power of MERN Stack. (https://www.yout
     Message Persistence: Chat messages are stored in MongoDB for easy retrieval of chat history.
     Responsive Design: The application is fully responsive, providing an optimal experience across different devices.
     
-## Technologies Used
+# Technologies Used
 
     Frontend: React.js, HTML, CSS , Axios for API calls, Socket.io client for real-time communication.
     Backend: Node.js, Express.js for API endpoints and handling requests, Socket.io for WebSocket connections, JWT for authentication.
     Database: MongoDB with Mongoose ORM for storing user data, messages, and chat rooms.
     Real-Time Communication: Socket.io for handling real-time, bidirectional communication between clients and the server.
 
-## Architecture
+# Architecture
 
     Client-Side (React.js):
         React.js components handle the user interface, routing, and manage the state of the application.
@@ -42,31 +42,20 @@ Snappy is chat application build with the power of MERN Stack. (https://www.yout
 
 Both should be installed and make sure mongodb is running.
 ### Installation
-
-#### First Method
+#### 1.Clone the repository:
 ```shell
 git clone https://github.com/Adarshraj562/chat-app-react-nodejs
 cd chat-app-react-nodejs
 ```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
-cd server
-mv .env.example .env
-cd ..
-```
-
+#### 2. Install dependicies:
 Now install the dependencies
 ```shell
 cd server
-yarn
+npm i
 cd ..
 cd public
-yarn
+npm i
 ```
-We are almost done, Now just start the development server.
 
 For Frontend.
 ```shell
