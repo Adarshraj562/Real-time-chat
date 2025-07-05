@@ -1,5 +1,3 @@
-# Real-time-chat
-
 # ChatWeb-App
 
 A full-stack real-time chat application built with React (frontend) and Node.js/Express (backend). Users can register, log in, set avatars, and chat with each other in real time.
